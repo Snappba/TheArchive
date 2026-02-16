@@ -43,3 +43,36 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+
+table {
+  width: 20%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+@media (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
