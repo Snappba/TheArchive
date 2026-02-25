@@ -2,20 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Archive: Projects</title>
+  <meta name="description" content="Projects and hardware components used in my homelab and self-hosted infrastucture.">
+  <meta name="keywords" content="Proxmox VE, virtualization projects, homelab hardware, AMD Ryzen 7 7700, RTX 3060 Ti, self-hosted services, networking configuration, VPN routing">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Archive: Projects</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/ArchiveLogo_Circle.png" type="image/png">
+
 </head>
 <body>
 
   <header>
-    <div><a href="index.html" class="logo">Logo Placeholder</a></div>
-    <h1 id=title>The Archive: Projects</h1>
-    <nav>
+    <div class="branding">
+      <div class="logo_container">
+        <a href="index.html" class="logo" >
+          <img src="img/ArchiveLogo_Circle.png" alt="The Archive Logo" width="80">
+       </a>
+      </div>
+      <h1 id="title">The Archive: Projects</h1>
+    </div>
+    <nav aria-label="Primary Navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" >Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="links.html">Links</a></li>
       </ul>
     </nav>
@@ -32,8 +42,8 @@
         <caption>My Homelab Hardware</caption>
         <thead>
           <tr>
-            <th>Component</th>
-            <th>Model</th>
+            <th scope="col"">Component</th>
+            <th scope="col">Model</th>
           </tr>
         </thead>
         <tbody>
@@ -60,11 +70,31 @@
         </tbody>
       </table>
 
+      <section>
+        <h2>Current Focus</h2>
+        <p>I am currently reworking my networking configuration, to ensure that qBittorrent is routed through its vpn following a disconnect or other interruption.</p>
+      </section>
+
+      <section>
+        <h2>Getting Started with Proxmox</h2>
+        <p>
+          This video provides an introduction to installing and configuring Proxmox VE for virtualization in a homelab environment 
+        </p>
+
+        <div class="video-container">
+          <iframe
+          src="https://www.youtube.com/embed/lFzWDJcRsqo?si=oX3HDhsB1Yxwv-2D"
+          title="Proxmox Beginner's Guide"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+          allowfullscreen>
+        </iframe>
+        </div>
+      </section>
   </main>
 
 
   <footer>
-    <p>&copy; 2026 The Archive</p>
+    <p>&copy; 2026 The Archive <br><span style=color:gray>Updated February 2026</span></p>
   </footer>
 
 </body>

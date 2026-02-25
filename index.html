@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Archive: Home</title>
+  <meta name="description" content="The Archive is a personal portfolio showcasing homelab projects, hardware builds, and development work.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="homelab, self-hosting, virtualization, Proxmox, hardware builds, networking, IT portfolio, home server, infrastructure">
+  <title>The Archive: Home</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/ArchiveLogo_Circle.png" type="image/png">
 </head>
 <body>
 
   <header>
-    <div><a href="index.html" class="logo">Logo Placeholder</a></div>
-    <h1 id=title>The Archive: Home</h1>
-    <nav>
+    <div class="branding">
+      <div class="logo_container">
+        <a href="index.html" class="logo" >
+          <img src="img/ArchiveLogo_Circle.png" alt="The Archive Logo" width="80">
+       </a>
+      </div>
+      <h1 id="title">The Archive: Home</h1>
+    </div>
+    <nav aria-label="Primary Navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="links.html">Links</a></li>
@@ -22,13 +31,21 @@
   </header>
 
   <main>
-    <h2>Home</h2>
-    <p>This is placeholder content for the home page.</p>
-    <p>This is more placeholder content while scaffolding is built.</p>
+    <h2>Welcome to The Archive</h2>
+    <p>The Archive is a personal portfolio documenting my homelab infrastructure, hardware builds, development projects, and just things I found interesting.</p>
+  
+    <section>
+      <h2>Featured Areas</h2>
+      <ul>
+        <li>Custom Mini-ITX Build</li>
+        <li>Self-Hosted Services</li>
+        <li>Networking and Virtualization</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 The Archive</p>
+    <p>&copy; 2026 The Archive <br><span style=color:gray>Updated February 2026</span></p>
   </footer>
 
 </body>

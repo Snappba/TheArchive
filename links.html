@@ -4,19 +4,29 @@
   <meta charset="UTF-8">
   <title>The Archive: Links</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact information and useful external links related to The Archive portfolio.">
+  <meta name="keywords" content="homelab resources, GitHub portfolio, PCPartPicker builds, r/homelab, contact form, IT networking resources">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/ArchiveLogo_Circle.png" type="image/png">
+
 </head>
 <body>
 
   <header>
-    <div><a href="index.html" class="logo">Logo Placeholder</a></div>
-    <h1 id=title>The Archive: Links</h1>
-    <nav>
+    <div class="branding">
+      <div class="logo_container">
+        <a href="index.html" class="logo" >
+          <img src="img/ArchiveLogo_Circle.png" alt="The Archive Logo" width="80">
+       </a>
+      </div>
+      <h1 id="title">The Archive: Links</h1>
+    </div>
+    <nav aria-label="Primary Navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" >Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="links.html">Links</a></li>
+        <li><a href="links.html" class="active">Links</a></li>
       </ul>
     </nav>
   </header>
@@ -25,10 +35,49 @@
     <h2>Links</h2>
     <p>This is placeholder content for the home page.</p>
     <p>This is more placeholder content while scaffolding is built.</p>
+
+    <section>
+      <h2>Contact</h2>
+      <div>
+      <form id="contactForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required aria-required="true">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required aria-required="true">
+        <br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="3" required aria-required="true" ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formSucces" style="display:none; color:green;">
+        Thank you! Your message was received!
+      </p>
+      </div>
+    </section>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        document.getElementById('formSuccess').style.display = "block";
+      });
+    </script>
+
+    <section>
+      <h2>External Resources</h2>
+      <ul>
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://pcpartpicker.com/" target="_blank" rel="noopener noreferrer">PCPartpicker</a></li>
+        <li><a href="https://www.reddit.com/r/homelab/" target="_blank" rel="noopener noreferrer">r/Homelab</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 The Archive</p>
+    <p>&copy; 2026 The Archive <br><span style=color:gray>Updated February 2026</span></p>
   </footer>
 
 </body>

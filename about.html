@@ -4,36 +4,52 @@
   <meta charset="UTF-8">
   <title>The Archive: About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About The Archive - a personal portfolio documenting homelab hardware, builds, and development work.">
+  <meta name="keywords" content="homelab portfolio, IT student, hardware build, Mini-ITX build, Ryzen 7 7700, self-hosted infrastructure, development portfolio">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/ArchiveLogo_Circle.png" type="image/png">
+
 </head>
 <body>
 
   <header>
-    <div><a href="index.html" class="logo">Logo Placeholder</a></div>
-    <h1 id="title">The Archive: About</h1>
-    <nav>
+    <div class="branding">
+      <div class="logo_container">
+        <a href="index.html" class="logo" >
+          <img src="img/ArchiveLogo_Circle.png" alt="The Archive Logo" width="80">
+       </a>
+      </div>
+      <h1 id="title">The Archive: About</h1>
+    </div>
+    <nav aria-label="Primary Navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="links.html">Links</a></li>
-        <li><a href="https://www.google.com/search?q=grilled+cheese">Grilled Cheese</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h2>About</h2>
-    <p>This is the about page.</p>
-    <p>It contains an <strong>easter egg.</strong></p>
-    <p>The html and css for this site were originally developed for assignments for a web devlopment class. However this site is meant to act as a personal portfolio as sorts. </p>
-
-    <img src="img/case.jpg" alt="Black mini-itx computer case" width="500rem">
-    <img src="img/r7.7700.jpg" alt="Ryzen 7 7700 CPU" width="500rem" >
+    <p>This is the about page. <br>
+    The html and css for this site were originally developed for assignments for a web development class. However this site is meant to act as a personal portfolio as sorts. 
+    </p>
+    <figure>
+      <img src="img/NR200P_V3.webp" alt="Black mini-itx computer case" class="about-image">
+      <figcaption>Mini-ITX case used in my homelab build.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/r7.7700.jpg" alt="Ryzen 7 7700 CPU" class="about-image" >
+      <figcaption>CPU used my homelab build.</figcaption>
+    </figure>
   </main>
 
   <footer>
-    <p>&copy; 2026 The Archive</p>
+    <p>&copy; 2026 The Archive <br><span style=color:gray>Updated February 2026</span> <br>
+    <a href="https://www.github.com/snappba">Github</a></p>
+
   </footer>
 
 </body>
